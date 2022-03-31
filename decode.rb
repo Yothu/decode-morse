@@ -1,13 +1,15 @@
+# frozen_string_literal: true
+
 require './decode_word'
 
-def decode (sentence)
-  finalSentence = ""
-  words = sentence.split("   ")
-  for word in words
-    finalSentence += decode_word(word)
-    finalSentence += " "
+def decode(sentence)
+  final_sentence = ''
+  words = sentence.split('   ')
+  words.each do |word|
+    final_sentence += decode_word(word)
+    final_sentence += ' '
   end
-  return finalSentence
+  final_sentence
 end
 
-puts decode(".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...")
+puts decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
