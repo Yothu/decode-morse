@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require './decode_char'
 
 def decode_word(word)
