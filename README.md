@@ -65,7 +65,7 @@ cd /decode-morse
 To use run the decode method use this command:
 
 ```
-ruby ./decode_word.rb
+ruby ./decode.rb
 ```
 
 If you have successfully followed every step, you will get this in your terminal:
